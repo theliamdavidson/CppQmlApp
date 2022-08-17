@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>fileCabinet.qml</file>
+        <file>scan.qml</file>
+        <file>logo-lluh_0.png</file>
+    </qresource>
+</RCC>
