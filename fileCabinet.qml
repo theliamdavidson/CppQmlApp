@@ -197,6 +197,24 @@ ApplicationWindow{
                 focus: true
                 closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
                 Rectangle {
+                    id: contentBlockerAddBottom
+                    x: -410
+                    y: 450
+                    width: 1080
+                    height: 150
+                    color: "#f2f0f0" //"#e3dede"
+                    visible: true
+                }
+                Rectangle {
+                    id: contentBlockerAddUpper
+                    x: -410
+                    y: -44
+                    width: 1080
+                    height: 40
+                    color: "#f2f0f0" //"#e3dede"
+                    visible: true
+                }
+                Rectangle {
                     id: contentAdd
                     x: -175
                     y: -40
@@ -314,6 +332,24 @@ ApplicationWindow{
                 modal: true
                 focus: true
                 closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
+                Rectangle {
+                    id: contentBlockerScanOpBottom
+                    x: -210
+                    y: 485
+                    width: 1080
+                    height: 150
+                    color: "#f2f0f0" //"#e3dede"
+                    visible: true
+                }
+                Rectangle {
+                    id: contentBlockerScanOpUpper
+                    x: -210
+                    y: -9
+                    width: 1080
+                    height: 40
+                    color: "#f2f0f0" //"#e3dede"
+                    visible: true
+                }
                 Rectangle {
                     id: scanOptionsTitle
                     x: 160
@@ -601,6 +637,24 @@ ApplicationWindow{
                 modal: true
                 focus: true
                 closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
+                Rectangle {
+                    id: contentBlockerUtilBottom
+                    x: -305
+                    y: 485
+                    width: 1080
+                    height: 150
+                    color: "#f2f0f0" //"#e3dede"
+                    visible: true
+                }
+                Rectangle {
+                    id: contentBlockerUtilUpper
+                    x: -305
+                    y: -5
+                    width: 1080
+                    height: 40
+                    color: "#f2f0f0" //"#e3dede"
+                    visible: true
+                }
                 Rectangle {
                     id: utilTitle
                     x: 10
