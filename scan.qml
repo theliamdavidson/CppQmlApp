@@ -9,6 +9,7 @@ ApplicationWindow {
     height: 768
     visible: true
     id: root
+    visibility: "Maximized"
 
         color: white
         Rectangle {

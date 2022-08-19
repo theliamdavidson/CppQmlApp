@@ -9,6 +9,7 @@ ApplicationWindow{
     width: 1024
     height: 768
     id: root
+    visibility: "Maximized"
     property int listInt: -1
     Rectangle {
         anchors.fill: parent
