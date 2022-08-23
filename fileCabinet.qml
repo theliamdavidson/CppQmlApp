@@ -402,6 +402,7 @@ ApplicationWindow{
                         onClicked: {
                             var component = Qt.createComponent("scan.qml")
                             var window    = component.createObject(root)
+                            signal
                             window.show()
                             scanOptions.close()
 

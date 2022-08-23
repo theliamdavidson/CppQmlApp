@@ -10,8 +10,18 @@ ApplicationWindow {
     visible: true
     id: root
     visibility: "Maximized"
-
-        color: white
+    color: "white"
+    property int infIterator: 0
+    ListModel {
+        id: infTargets
+       }
+    Component {
+        id: infDelegate
+        Text {
+            text: name;
+            font.pixelSize: 24
+        }
+    }
         Rectangle {
             x: 0
             y: 0
@@ -191,6 +201,8 @@ ApplicationWindow {
                 model1.text =  text1[0] + "." + text1[1] + text1[2]
                 edit0.text = " "
                 edit1.text = " "
+                artery.text = I
+                infIterator = infIterator + 1
                 // swap for scan data in future functionality
             }
 
