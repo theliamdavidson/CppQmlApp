@@ -7,8 +7,10 @@
 class scan_signal : public QObject{
     Q_OBJECT
     public:
+    int index;
     scan_signal();
     void sendList(const QString &text);
+    void index_reset();
     public slots:
 
 };

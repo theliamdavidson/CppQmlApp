@@ -203,6 +203,7 @@ ApplicationWindow {
                 edit1.text = " "
                 artery.text = I
                 infIterator = infIterator + 1
+                scan_signal.sendlist("QML MESSAGE")
                 // swap for scan data in future functionality
             }
 
