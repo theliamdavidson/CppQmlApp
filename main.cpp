@@ -1,7 +1,9 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <string>
+#include <QQmlContext>
+#include "scan_signal.h"
 using namespace std;
+scan_signal sc;
 
 
 
@@ -19,7 +21,12 @@ int main(int argc, char *argv[])
         if (!obj && url == objUrl)
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
+    scan_signal* scannedSig = new scan_signal();
+    scannedSig->sendList("TEXT FROM C++");
+    engine.rootContext()->setContextProperty("list", scannedSig);
     engine.load(url);
+
+
 
     return app.exec();
 }
