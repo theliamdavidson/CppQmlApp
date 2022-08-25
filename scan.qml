@@ -21,6 +21,7 @@ ApplicationWindow {
 // QQmlComponent: Component is not ready"
 // this page tries to load the scan_signal.index integer, which is null(?)
 // and causes the JS to die.
+// git is struggling as well
     ListModel {
         id: infTargets
        }
