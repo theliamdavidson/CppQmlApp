@@ -194,6 +194,8 @@ ApplicationWindow {
             leftPadding: 10
             highlighted: true
             layer.enabled: false
+
+
             onClicked: {
                 var text0 = String(Math.floor(Math.random() * (999 - 100) ) + 100);
                 var text1 = String(Math.floor(Math.random() * (999 - 100) ) + 100);
@@ -204,6 +206,7 @@ ApplicationWindow {
                 artery.text = I
                 infIterator = infIterator + 1
                 scan_signal.sendlist("QML MESSAGE")
+                scan_signal.index = scan_signal.index + 1
                 // swap for scan data in future functionality
             }
 
