@@ -212,9 +212,13 @@ ApplicationWindow {
                 edit1.text = " "
 
                 infIterator = infIterator + 1
-                scan_signal.sendlist("QML MESSAGE")
+                console.log("called")
+                // secondary error has to do with the sendList function
+                // (hopefully not the entire scan_signal class
+                scan_signal.sendList("QML MESSAGE")
                 scan_signal.counter = scan_signal.counter + 1
                 artery.text = "Index is: " + scan_signal.index
+
                 // swap for scan data in future functionality
             }
 
