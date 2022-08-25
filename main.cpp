@@ -42,8 +42,9 @@ int main(int argc, char *argv[])
     scan_signal* scannedSig = new scan_signal();
     scannedSig->sendList(listArt[scannedSig->index]);
     engine.rootContext()->setContextProperty("list", scannedSig);
+    //engine.rootContext()->setContextProperty("list", scannedSig);
     engine.load(url);
-
+    // test
 
 
     return app.exec();

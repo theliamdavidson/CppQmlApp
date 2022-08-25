@@ -12,14 +12,11 @@ ApplicationWindow {
     visibility: "Maximized"
     color: "white"
     property int infIterator: 0
-//    connections{
-//        target: scan_signal
-//        onCounterChanged: console.log("Counter changed to " + scan_signal.index)
-//    }
+
 // completely obliterates the page.
 // fix "TypeError: cannot call method 'show' of null
 // QQmlComponent: Component is not ready"
-// this page tries to load the scan_signal.index integer, which is null(?)
+// the error is actually onCounterChanged
 // and causes the JS to die.
 // git is struggling as well
     ListModel {
@@ -237,4 +234,8 @@ ApplicationWindow {
             highlighted: true
             onClicked: root.close()
         }
+      //  connections{
+            //target: scan_signal
+         //   onContinueOnPressed: console.log("Counter changed to ")// + scan_signal.index)
+      //  }
 }
