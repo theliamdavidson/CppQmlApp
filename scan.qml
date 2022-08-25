@@ -12,6 +12,15 @@ ApplicationWindow {
     visibility: "Maximized"
     color: "white"
     property int infIterator: 0
+//    connections{
+//        target: scan_signal
+//        onCounterChanged: console.log("Counter changed to " + scan_signal.index)
+//    }
+// completely obliterates the page.
+// fix "TypeError: cannot call method 'show' of null
+// QQmlComponent: Component is not ready"
+// this page tries to load the scan_signal.index integer, which is null(?)
+// and causes the JS to die.
     ListModel {
         id: infTargets
        }
@@ -203,10 +212,11 @@ ApplicationWindow {
                 model1.text =  text1[0] + "." + text1[1] + text1[2]
                 edit0.text = " "
                 edit1.text = " "
-                artery.text = I
+
                 infIterator = infIterator + 1
                 scan_signal.sendlist("QML MESSAGE")
-                scan_signal.index = scan_signal.index + 1
+                scan_signal.counter = scan_signal.counter + 1
+                artery.text = "Index is: " + scan_signal.index
                 // swap for scan data in future functionality
             }
 
